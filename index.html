@@ -1,622 +1,288 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<html lang="en">
+
 <head>
 
-<!-- Meta Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<title>Cha Cha Cha | Cuba</title>   
+    <title>Cha Cha Cha | Cuba</title>
 
-<meta name="description" content="Insert Your Site Description" /> 
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-<!-- Mobile Specifics -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
+    <!-- Custom Fonts -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-<!-- Mobile Internet Explorer ClearType Technology -->
-<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
-<!-- Bootstrap -->
-<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
 
-<!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
-
-<!-- FancyBox -->
-<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-
-<!-- Font Icons -->
-<link href="_include/css/fonts.css" rel="stylesheet">
-
-<!-- Shortcodes -->
-<link href="_include/css/shortcodes.css" rel="stylesheet">
-
-<!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
-
-<!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-<!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
-
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
-
-<!-- Modernizr -->
-<script src="_include/js/modernizr.js"></script>
-
-<!-- Analytics -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- End Analytics -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
+<body id="page-top">
 
-<body>
-
-<!-- This section is for Splash Screen -->
-<div class="ole">
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
-</div>
-<!-- End of Splash Screen -->
-
-<!-- Homepage Slider -->
-<div id="home-slider">	
-    <div class="overlay"></div>
-
-    <div class="slider-text">
-    	<div class="slide-caption">
-    		<div class="slide-content">CHA CHA CHA</div>
-    		<div class="slide-content"><h1>CUBA</h1></div>
-    	</div>
-    </div>   
-	
-	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#findus"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
-
-<!-- Header -->
-<header>
-    <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
-        <div id="logo">
-        	CHA CHA CHA | CUBA
-        	<!-- <a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a> -->
-        </div>
-        
-        <nav id="menu">
-        	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
-                <li><a href="#findus">Location</a></li>
-                <li><a href="#food">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        
-    </div>
-</header>
-<!-- End Header -->
-
-<!-- About Section -->
-<div id="findus" class="page">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Cha Cha Cha Cuba</h2>
-                <h3 class="title-description">
-                    <p>112 South B. St., San Mateo, CA 94401</p>
-                    <p>650.347.2900</p>
-                </h3>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">CHA³|CUBA</a>
             </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- People -->
-    <div class="row">
-        
-        <!-- Start Profile -->
-        <div class="span4 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">CTO/Founder</span>
-                </div>
-                <img src="_include/img/profile/profile-01.jpg" alt="John Doe">
-            </div>
-            <h3 class="profile-name">John Doe</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                
-            <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-        <div class="span4 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Creative Director</span>
-                </div>
-                <img src="_include/img/profile/profile-02.jpg" alt="Jane Helf">
-            </div>
-            <h3 class="profile-name">Jane Helf</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                
-            <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-email"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-        <div class="span4 profile">
-            <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead Designer</span>
-                </div>
-                <img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
-            </div>
-            <h3 class="profile-name">Joshua Insanus</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                
-            <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-    </div>
-    <!-- End People -->
-</div>
-</div>
-<!-- End About Section -->
+        <!-- /.container-fluid -->
+    </nav>
 
-<!-- Start Food -->
-<div id="food" class="page-alternate">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">Menu</h2>
-                    <h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>
-                    <br>
+    <video autoplay muted loop poster="../img/image01.jpg" id="bgvid">
+        <source src="../img/pizza.mp4" type="video/mp4">
+        <source src="../img/Contrast.webm" type="video/webm">
+    </video>
 
-                    <!-- Start Toggle -->
-                    <div class="accordion" id="toggleArea">
-                        <div class="accordion-group">
-                            <div class="accordion-heading togglize">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseOne">
-                                    TAPAS
-                                    <span class="font-icon-arrow-simple-down"></span>
-                                </a>
-                            </div>
-                            <div id="collapseOne" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    <ul>
-                                      <li>
-                                        <h5>ENSALADA MIXTA</h5>
-                                        <p>tossed mixed greens and vegetables in a coconut vinaigrette</p>
-                                      </li>
-                                      <li>
-                                        <h5>ENSALADA DE SPINACH</h5>
-                                        <p>tossed with bacon &amp; mushrooms in a warm Dijon-sherry wine dressing</p>
-                                      </li>
-                                      <li>
-                                        <h5>CEVICHE</h5>
-                                        <p>swai fish fillet with fire roasted corn, cucumbers marinated in a spicy lime-serrano chile vinaigrette</p>
-                                      </li>
-                                      <li>
-                                        <h5>CAJUN SHRIMP</h5>
-                                        <p>shrimp sautéed in Spicy Cajun cream sauce</p>
-                                      </li>
-                                      <li>
-                                        <h5>CAMARONES AL AJILLO</h5>
-                                        <p>shrimp sautéed with lots of garlic, parsley, cilantro &amp; lime juice served with tostones</p>
-                                      </li>
-                                      <li>
-                                        <h5>BLACK MUSSELS</h5>
-                                        <p>with garlic, tomatoes, saffron broth &amp; fresh herbs</p>
-                                      </li>
-                                      <li>
-                                        <h5>CALAMAR FRITO</h5>
-                                        <p>crispy calamari with lemon-garlic aioli</p>
-                                      </li>
-                                      <li>
-                                        <h5>CROQUETAS DE CANGREJO</h5>
-                                        <p>snow crab croquettes with spicy cilantro aioli</p>
-                                      </li>
-                                      <li>
-                                        <h5>FILETILLO DE POLLO</h5>
-                                        <p>chicken breast Paillard style with Dijon-basil cream sauce</p>
-                                      </li>
-                                      <li>
-                                        <h5>ALITAS DE POLLO</h5>
-                                        <p>chicken wings with guava-chipotle chile glaze</p>
-                                      </li>
-                                      <li>
-                                        <h5>QUESADILLA DE POLLO</h5>
-                                        <p>barbecue chicken quesadilla with guacamole, salsa &amp; sour cream</p>
-                                      </li>
-                                      <li>
-                                        <h5>POLLO AL JERK</h5>
-                                        <p>marinated chicken thighs with habanero peppers, raisins, ginger &amp; tomatoes, served with white rice </p>
-                                      </li>
-                                      <li>
-                                        <h5>CHICKEN CURRY EMPANADA</h5>
-                                        <p>with tossed greens &amp; black bean sauce</p>
-                                      </li>
-                                      <li>
-                                        <h5>RICOTA CHEESE-SPINACH EMPANADA</h5>
-                                        <p>with tossed greens &amp; black bean sauce</p>
-                                      </li>
-                                      <li>
-                                        <h5>HONGOS AL JEREZ</h5>
-                                        <p>sautéed mushrooms with sherry wine, fresh herbs &amp; garlic</p>
-                                      </li>
-                                      <li>
-                                        <h5>ARROZ CON FRIJOLES</h5>
-                                        <p>yellow rice &amp; black beans with sour cream</p>
-                                      </li>
-                                      <li>
-                                        <h5>QUESADILLA DE PUERCO</h5>
-                                        <p>barbecue pork quesadilla with guacamole, salsa &amp; sour cream</p>
-                                      </li>
-                                      <li>
-                                        <h5>PLATANO FRITO</h5>
-                                        <p>sweet plantains with black bean sauce &amp; sour cream</p>
-                                      </li>
-                                      <li>
-                                        <h5>TOSTONES</h5>
-                                        <p>fried green plantain patties with black bean sauce</p>
-                                      </li>
-                                      <li>
-                                        <h5>PAPAS FRITAS</h5>
-                                        <p>fried new potatoes with chile pasilla aioli</p>
-                                      </li>
-                                      <li>
-                                        <h5>YUCA FRITA</h5>
-                                        <p>fried yucca with green sauce</p>
-                                      </li>
-                                      <li>
-                                        <h5>PAPAS RELLENAS</h5>
-                                        <p>fried mashed potato balls filled with cuban ground beef</p>
-                                      </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-group">
-                            <div class="accordion-heading togglize">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseTwo">
-                                ENTREE
-                                <span class="font-icon-arrow-simple-down"></span>
-                            </a>
-                            </div>
-                            <div id="collapseTwo" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    <ul>
-                                      <li>
-                                        <h5>LECHON ASADO</h5>
-                                        <p>roasted pork marinated in oregano, garlic, black pepper &amp; wine, served with arroz congri &amp; sweet plantains</p>
-                                      </li>
-                                      <li>
-                                        <h5>ROPA VIEJA</h5>
-                                        <p>shredded sirloin beef simmered in tomato-wine sauce with peppers, cumin, garlic &amp; oregano served with jasmine rice and sweet plantains</p>
-                                      </li>
-                                      <li>
-                                        <h5>BISTEK ENCEBOLLADO</h5>
-                                        <p>grilled marinated sirloin steak topped with caramelized onions, served with arroz congri &amp; yucca frita</p>
-                                      </li>
-                                      <li>
-                                        <h5>PAELLA DE MARISCOS</h5>
-                                        <p>sauteed yellow rice with olives, saffron, tomatoes, andouille sausage, mussels, salmon, scallops, calamari &amp; shrimp</p>
-                                      </li>
-                                      <li>
-                                        <h5>FILETE DE SALMON CON SALSA VERDE</h5>
-                                        <p>pan fried salmon with a cuban style green sauce &amp; served with yellow rice, black beans &amp; sweet plantains</p>
-                                      </li>
-                                      <h5>ARROZ CON POLLO</h5>
-                                      <p>roasted marinated chicken sautéed with olives, cilantro, red peppers, peas, &amp; yellow rice, served with black beans</p>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="accordion-group">
-                            <div class="accordion-heading togglize">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseThird">
-                                DESSERT
-                                <span class="font-icon-arrow-simple-down"></span>
-                            </a>
-                            </div>
-                            <div id="collapseThird" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    <ul>
-                                      <li>
-                                        <h5>FLAN</h5>
-                                      </li>
-                                      <li>
-                                        <h5>COCONUT FLAN</h5>
-                                      </li>
-                                      <li>
-                                        <h5>PUDIN CUBANO</h5>
-                                      </li>
-                                      <li>
-                                        <h5>TRES LECHE CAKE</h5>
-                                      </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>CHA CHA CHA CUBA RESTAURANT</h1>
+                <p>CARRIBEAN &amp; CUBAN CUISINE IN SAN MATEO</p>
+                <a href="#about" class="page-scroll btn btn-primary">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">We've got what you need!</h2>
+                    <hr class="light">
+                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <h3>Sturdy Templates</h3>
+                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Ready to Ship</h3>
+                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Up to Date</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- End Food -->
+    </section>
 
-<!-- Our Work Section -->
-<div id="gallery" class="page">
-	<div class="container">
-    	<!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">Our Work</h2>
-                    <h3 class="title-description">Check Out Our Projects on <a href="#">Dribbble</a>.</h3>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- End Title Page -->
-        
-        <!-- Portfolio Projects -->
-        <div class="row">
-        	<div class="span3">
-            	<!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
-                        <li><a href="#filter" data-option-value=".video">Video</a></li>
-                    </ul>
-                </nav>
-                <!-- End Filter -->
-            </div>
-            
-            <div class="span9">
-            	<div class="row">
-                	<section id="projects">
-                    	<ul id="thumbs">
-                        
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="_include/img/work/full/image-01-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="_include/img/work/full/image-02-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="_include/img/work/full/image-03-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/51460511">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-08.jpg" alt="Video">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="_include/img/work/full/image-04-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="_include/img/work/full/image-05-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/50834315">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-09.jpg" alt="Video">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="_include/img/work/full/image-06-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-07-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                        </ul>
-                    </section>
-                    
-            	</div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Free Download at Start Bootstrap!</h2>
+                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
             </div>
         </div>
-        <!-- End Portfolio Projects -->
-    </div>
-</div>
-<!-- End Our Work Section -->
+    </aside>
 
-<!-- Socialize -->
-<div id="social-area" class="page">
-	<div class="container">
-    	<div class="row">
-            <div class="span12">
-                <nav id="social">
-                    <ul>
-                        <li><a href="http://www.yelp.com/biz/cha-cha-cha-cuba-san-mateo" title="Read About Us on Yelp" target="_blank"><span class="font-icon-social-yelp"></span></a></li>
-                        <li><a href="https://www.facebook.com/pages/Cha-Cha-Cha-Cuba/134408496609484?fref=ts" title="Like Us on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        <li><a href="https://instagram.com/chachachacuba/" title="Follow Us on Instagram" target="_blank"><span class="font-icon-social-photobucket"></span></a></li>
-                    </ul>
-                </nav>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- End Socialize -->
+    </section>
 
-<!-- Footer -->
-<footer>
-	<p class="credits">&copy;2015 <a href="https://github.com/jcpak" title="Julio Pak | Front-End Developer">Developed</a> by <a href="https://github.com/jcpak" title="Julio Pak | Front-End Developer">Julio Pak</a></p>
-</footer>
-<!-- End Footer -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<!-- Back To Top -->
-<a id="back-to-top" href="#">
-	<i class="font-icon-arrow-simple-up"></i>
-</a>
-<!-- End Back to Top -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
 
-<!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
-<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="_include/js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
 
 </body>
+
 </html>
