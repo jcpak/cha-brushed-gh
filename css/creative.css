@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #0088FF;
+    color: #049CFF;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -33,7 +33,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #0088FF;
+    color: #049CFF;
 }
 
 h1,
@@ -52,16 +52,22 @@ p {
 }
 
 .bg-primary {
-    background-color: #0088FF;
+    background-color: #14151A;
 }
 
 .bg-secondary {
-    background-color: #fff;
+    color: #049CFF;
+    background-color: #404040;
 }
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: #1B1C21;
+}
+
+.bg-dark2 {
+    color: #AAA;
+    background-color: #14151A;
 }
 
 .text-faded {
@@ -72,7 +78,7 @@ section {
     padding: 100px 0;
 }
 
-aside {
+.menu {
     padding: 50px 0;
 }
 
@@ -83,7 +89,7 @@ aside {
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
+    background-color: #000;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -93,12 +99,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #0088FF;
+    color: #049CFF;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #0088FF;
+    color: #049CFF;
 }
 
 .navbar-default .nav > li>a,
@@ -106,22 +112,34 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: #fff;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #0088FF;
+    color: #049CFF;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #0088FF!important;
+    color: #049CFF!important;
     background-color: transparent;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
 
@@ -152,27 +170,27 @@ aside {
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #fff;
+        background-color: #000;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #0088FF;
+        color: #049CFF;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #0088FF;
+        color: #049CFF;
     }
 
     .navbar-default.affix .nav > li>a,
     .navbar-default.affix .nav>li>a:focus {
-        color: #222;
+        color: #fff;
     }
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #0088FF;
+        color: #049CFF;
     }
 }
 
@@ -190,6 +208,7 @@ video#bgvid {
     height: auto; 
     z-index: -100;
     background: url(img/image01.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -199,7 +218,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    /* background-image: url(../img/header.jpg); */
+    /* background-image: url(../img/image01.jpg); */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -287,14 +306,20 @@ header .header-content .header-content-inner p {
     margin-bottom: 0;
 }
 
-.portfolio-box {
+.gallery {
+    background-image: url("https://d1qkyo3pi1c9bx.cloudfront.net/D7021408-671F-42FA-837E-DEB20A6B3D76/ae58568f-a266-46c7-85a0-0b544f438a28_h.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-box {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 650px;
 }
 
-.portfolio-box .portfolio-box-caption {
+.gallery-box .gallery-box-caption {
     display: block;
     position: absolute;
     bottom: 0;
@@ -303,13 +328,13 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: #0088FF;
+    background: #049CFF;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+.gallery-box .gallery-box-caption .gallery-box-caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -317,33 +342,53 @@ header .header-content .header-content-inner p {
     transform: translateY(-50%);
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.gallery-box .gallery-box-caption .gallery-box-caption-content .project-category,
+.gallery-box .gallery-box-caption .gallery-box-caption-content .project-name {
     padding: 0 15px;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+.gallery-box .gallery-box-caption .gallery-box-caption-content .project-category {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.gallery-box .gallery-box-caption .gallery-box-caption-content .project-name {
     font-size: 18px;
 }
 
-.portfolio-box:hover .portfolio-box-caption {
+.gallery-box:hover .gallery-box-caption {
     opacity: 1;
 }
 
 @media(min-width:768px) {
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    .gallery-box .gallery-box-caption .gallery-box-caption-content .project-category {
         font-size: 16px;
     }
 
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    .gallery-box .gallery-box-caption .gallery-box-caption-content .project-name {
         font-size: 22px;
+    }
+}
+
+.menu {
+    background-image: url("http://chacuba.com/img/menu-repeat.jpg");
+}
+
+.food h3 {
+    font-size: 16px;
+}
+
+.food p {
+    font-size: 13px;
+    color: rgba(255,255,255,.7);
+}
+
+@media(min-width:768px) {
+    .menu {
+        background-image: url("http://chacuba.com/img/menu-repeat-big.jpg");
+        background-size: cover;
     }
 }
 
@@ -352,7 +397,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #0088FF;
+    color: #fff;
 }
 
 .no-gutter > [class*=col-] {
@@ -418,9 +463,9 @@ fieldset[disabled] .btn-default.active {
     border-radius: 0px !important;
     padding: 10px 20px !important;
     position: relative;
-    top: 600%;
-    transform: translateY(600%);
-    border-color: #0088FF;
+    /* top: 600%;
+    transform: translateY(600%); */
+    border-color: #049CFF;
     color: #fff;
     background-color: transparent;
     -webkit-transition: all .35s;
@@ -436,7 +481,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: #ed431f;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #000;
 }
 
 .btn-primary:active,
@@ -463,12 +508,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #0088FF;
-    background-color: #0088FF;
+    border-color: #049CFF;
+    background-color: #049CFF;
 }
 
 .btn-primary .badge {
-    color: #0088FF;
+    color: #049CFF;
     background-color: #fff;
 }
 
